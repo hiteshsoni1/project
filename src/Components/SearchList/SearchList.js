@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ImageModal from '../ImageModal/ImageModal'
 import { CircularProgress } from '@material-ui/core';
 import _ from 'lodash';
-import './body.css';
+import './searchList.css';
 import { getData } from '../../service'
 
 var debouneGetData, throatleGetData;
