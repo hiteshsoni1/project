@@ -1,0 +1,26 @@
+.modal {
+    position: fixed;
+    max-height: 300px;
+    top:20%;
+    left:30%;
+   
+}
+
+@media (max-width: 900px) {
+    .modal {
+    max-width:400px;
+    }
+  }
+
+@media (max-width: 650px) {
+    .modal {
+    max-width:300px;
+    }
+  }
+
+
+@media (max-width: 300px) {
+    .modal {
+    max-width:200px;
+    }
+  }

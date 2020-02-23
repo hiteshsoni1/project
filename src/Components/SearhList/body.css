@@ -1,0 +1,18 @@
+.photos {
+    display: flex;
+    position: absolute;
+    z-index: -2;
+    top:100px;
+    margin: 5px;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list_image {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    padding: 0px;
+
+}
