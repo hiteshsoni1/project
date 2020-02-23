@@ -1,6 +1,12 @@
 .photos {
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    z-index: -2;
+    top:100px;
+    margin: 5px;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    justify-content: center;
   
 }
 
@@ -11,19 +17,9 @@
     padding: 0px;
 
 }
-.list {
-    display: flex;
-    position: absolute;
-    z-index: -2;
-    top:100px;
-    margin: 5px;
-    flex-wrap: wrap ;
-    flex-direction: row;
-    justify-content: center;
-}
+
 .loader {
-    position: absolute;
+    position: relative;
     top:200px;
-    left:50%;
-    height: 300px;
+    left:650px;
 }

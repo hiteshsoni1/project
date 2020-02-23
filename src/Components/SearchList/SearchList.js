@@ -59,14 +59,12 @@ function SearchList(props) {
 
     return (
         <div className="photos" id='photos'  >
-            <div className="list">
-                {data.map(val => {
-                    let url = `https://farm${val.farm}.staticflickr.com/${val.server}/${val.id}_${val.secret}.jpg`;
-                    return (
-                        <img src={url} className="list_image" key={val.id} onClick={() => handleClick(url, val.title)} />
-                    )
-                })}
-            </div>
+            {data.map(val => {
+                let url = `https://farm${val.farm}.staticflickr.com/${val.server}/${val.id}_${val.secret}.jpg`;
+                return (
+                    <img src={url} className="list_image" key={val.id} onClick={() => handleClick(url, val.title)} />
+                )
+            })}
             {!data.length && loader && <div className="loader">
                 <CircularProgress />
             </div>
