@@ -9,5 +9,8 @@ export const getData = async (search, page) => {
                 data = value.photos.photo;
             }
         })
+        .catch((error) => {
+            console.log(error);
+        });
     return data;
 }

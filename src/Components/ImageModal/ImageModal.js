@@ -12,9 +12,13 @@ const ImageModal = ({ image, open, setOpen }) => {
         <div className="modal">
             <GridListTile >
                 <img src={image.url} style={{ maxHeight: '500px' }} />
-                <GridListTileBar
-                    title={image.title}
-                />
+                {
+                    image.title &&
+                    <GridListTileBar
+                        title={image.title}
+                    />
+
+                }
             </GridListTile>
         </div>
     </Modal>);
